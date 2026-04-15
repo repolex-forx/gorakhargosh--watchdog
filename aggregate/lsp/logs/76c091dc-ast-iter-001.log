@@ -1,0 +1,7 @@
+[2026-04-15T03:14:50Z] === AST ITERATION 1 START | repo=gorakhargosh/watchdog sha=76c091dc ===
+[2026-04-15T03:14:50Z] [iter=1] PHASE START: ast repo=gorakhargosh/watchdog sha=76c091dc
+[2026-04-15T03:14:50Z] [iter=1] Building AST aggregate chunks
+[2026-04-15T03:15:20Z] [iter=1] AST chunks built count=1 triples=374888
+[2026-04-15T03:15:20Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/76c091dc8841de1d1a1cd6511bb509fe4f058de6/.complete
+[2026-04-15T03:15:20Z] [iter=1] PHASE END: ast elapsed_s=30 elapsed_min=0.5
+[2026-04-15T03:15:20Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
