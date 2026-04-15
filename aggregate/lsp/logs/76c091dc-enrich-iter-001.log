@@ -1,0 +1,25 @@
+[2026-04-15T03:37:45Z] === ENRICH ITERATION 1 START | repo=gorakhargosh/watchdog sha=76c091dc ===
+[2026-04-15T03:37:45Z] [iter=1] PHASE START: enrich repo=gorakhargosh/watchdog sha=76c091dc runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/76c091dc-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/76c091dc8841de1d1a1cd6511bb509fe4f058de6.nq.gz
+[2026-04-15T03:37:45Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-15T03:37:48Z] [iter=1] AST store loaded triples=374885 load_secs=3 mem_mb=594 MB
+[2026-04-15T03:37:48Z] [iter=1] Step 2: Finding LSP targets mem_mb=594 MB
+[2026-04-15T03:37:48Z] [iter=1] LSP targets found call_sites=3264 imports=388 extends=61 implements=0 secs=1
+[2026-04-15T03:37:49Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=594 MB
+[2026-04-15T03:37:51Z] [iter=1] Position index built positions=25504 nodes_with_types=33287 secs=2 mem_mb=594 MB
+[2026-04-15T03:37:51Z] [iter=1] Step 3: Starting LSP resolution mem_mb=594 MB already_completed_types=[] already_completed_files=0
+[2026-04-15T03:37:51Z] [iter=1] Resolving target type target_type=call_site count=3264
+[2026-04-15T03:38:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=2 resolved=89 errors=432 current=tests/test_inotify_c.py
+[2026-04-15T03:39:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.7 files_done=7 resolved=206 errors=665 current=tests/test_snapshot_diff.py
+[2026-04-15T03:39:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=10 resolved=305 errors=886 current=tests/test_pattern_matching_event_handler.py
+[2026-04-15T03:40:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=15 resolved=347 errors=1121 current=tests/test_regex_matching_event_handler.py
+[2026-04-15T03:41:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.4 files_done=23 resolved=498 errors=1356 current=src/watchdog/observers/winapi.py
+[2026-04-15T03:41:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.9 files_done=30 resolved=616 errors=1577 current=src/watchdog/utils/__init__.py
+[2026-04-15T03:42:19Z] [iter=1] Target type resolved target_type=call_site resolved=827 errors=1806 secs=268 mem_mb=594 MB
+[2026-04-15T03:42:19Z] [iter=1] Resolving target type target_type=import_statement count=388
+[2026-04-15T03:42:19Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=4.6 files_done=0 resolved=0 errors=0 current=src/watchdog/watchmedo.py
+[2026-04-15T03:42:22Z] [iter=1] Target type resolved target_type=import_statement resolved=307 errors=0 secs=3 mem_mb=594 MB
+[2026-04-15T03:42:22Z] [iter=1] Resolving target type target_type=extends_clause count=61
+[2026-04-15T03:42:24Z] [iter=1] Target type resolved target_type=extends_clause resolved=50 errors=0 secs=2 mem_mb=594 MB
+[2026-04-15T03:42:27Z] [iter=1] Step 5: Writing final enrichment file triples=29438
+[2026-04-15T03:42:28Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/76c091dc8841de1d1a1cd6511bb509fe4f058de6.nq.gz size_kb=583
+[2026-04-15T03:42:28Z] [iter=1] PHASE END: enrich elapsed_s=283 elapsed_min=4.7 total_triples=29438
